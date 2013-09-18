@@ -1,0 +1,14 @@
+.span6.offset3
+	h4 Define a New Threat
+	div.threatForm
+		form
+			fieldset
+				label Name your Threat <span>(Optional)</span>
+				input.span6(type="text")
+				label Add IP addresses or Domain Names
+				textarea.span6(rows="6", cols="75", placeholder="")
+				label Describe your Threat <span>(Optional)</span>
+				textarea.span6(rows="6", cols="75", placeholder="")
+		div.formActions
+			a.btn(href="/threats") Cancel
+			a.btn.btn-primary(href="/threats/error") Submit Threat

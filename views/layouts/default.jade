@@ -1,0 +1,31 @@
+doctype 5
+//if lt IE 7
+  html.no-js.lt-ie9.lt-ie8.lt-ie7
+//if IE 7
+  html.no-js.lt-ie9.lt-ie8
+//if IE 8
+  html.no-js.lt-ie9
+//[if gt IE 8]><!
+html.no-js
+  //<![endif]
+  head
+
+    include ../includes/_head
+
+    block head
+
+  body
+    
+    #wrapper
+    
+      header(role='masthead')
+        include ../includes/_header
+
+      div.bodyContent
+        block content
+    
+    footer(role='siteinfo')
+      include ../includes/_footer
+            
+    include ../includes/_scripts
+    block document

@@ -1,0 +1,34 @@
+extends layouts/default
+
+
+block content
+	.container
+		.row
+			.span12
+				div 
+					h4 This is a placeholder for the homepage
+
+					ul.contentMenu
+						li Contents:
+						li
+							a(href="/threats") Threats view
+							span - Contains all of the organization's threats.
+						li
+							a(href="/threats/new") Threat New view
+							span - The form to create a new threat
+						li
+							a(href="/threats/error") Threat Error view
+							span - A representation of a threat created with errors
+						li
+							a(href="/threats/empty") Threat Empty view
+							span - A representation of a threat created with no text
+						li
+							a(href="/threats/confirm") Threat Confirm view
+							span - The user is asked to confirm IP/Domains in their new threat
+						li
+							a(href="/threats/saved") Threat Saved view
+							span - A new threat appears on the Threats view
+						li
+							a(href="/threats/details") Threat Details view
+							span - A representation of a threat's details
+		

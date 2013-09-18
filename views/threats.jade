@@ -1,0 +1,37 @@
+extends layouts/default
+
+
+block content
+	.container
+		.row
+			.span12
+				h2 Threats
+				div.threatsNav.clearfix
+					div.pull-left
+						ul.threatsFilter.nav.nav-pills
+							li.active
+								a(href="#") Local
+							li
+								a(href="#") Community
+							li
+								a(href="#") Lastest	
+					div.pull-right
+						a.btn(href="/threats/new", role="button") New Threat
+					//- include includes/_threatModal
+
+		.row
+			.span12
+				include includes/_threats
+
+
+block document
+	script
+		$(function(){
+			$('.trackerButton span:nth-child(2)').hide();
+			$('.span12 div.threatWrapper').last().css({'border-bottom':'1px solid #dfdfdf'});
+			$('.trackerButton').click(function(){
+				$(this).toggleClass('btn-info');
+				$(this).children().toggle();
+				$(this).parents().toggleClass("active");
+			});
+		});

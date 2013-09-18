@@ -1,0 +1,15 @@
+.span6.offset3
+	h4.error There is an error in your New Threat
+	div.threatForm.control-group
+		form
+			fieldset
+				label Title <span>(Optional)</span>
+				input.span6(type="text")
+				div.control-group.error
+					label.control-label(for="inputError") You must add IP addresses or Domain Names
+					textarea.span6.error(rows="6", cols="75", placeholder="Paste any text containig IP addresses or domain names")
+				label Describe your Threat <span>(Optional)</span>
+				textarea.span6(rows="6", cols="75", placeholder="") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+		div.formActions
+			a.btn(href="/threats") Cancel
+			a.btn.btn-primary(href="/threats/confirm") Submit Threat

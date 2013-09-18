@@ -1,0 +1,181 @@
+html, body {
+  background-color: #333;
+  color: #555; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#wrapper {
+  background: #fafafa;
+  padding-bottom: 20px; }
+
+h1 {
+  font-size: 24px; }
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px; }
+
+h4 {
+  font-size: 16px; }
+  h4 span {
+    color: red;
+    font-weight: normal; }
+
+ul.contentMenu li {
+  margin-bottom: 15px; }
+
+div.threatWrapper, div.incidentsWrapper {
+  background-color: #fafafa;
+  border: 1px solid #dfdfdf;
+  border-bottom: 0; }
+
+div.threatWrapper.active.saved {
+  background-color: #dff0d8;
+  border: 1px solid #dfdfdf;
+  border-bottom: 0; }
+
+div.threatWrapper.active, div.incidentsWrapper.active {
+  background-color: #FFF; }
+
+h4.incidents {
+  padding: 20px 0 10px 15px; }
+
+ul.threatMeta, ul.incidentMeta {
+  width: 575px; }
+  ul.threatMeta li, ul.incidentMeta li {
+    padding: 8px 0 0 10px; }
+  ul.threatMeta li.threatTitle, ul.incidentMeta li.threatTitle {
+    font-weight: bold; }
+  ul.threatMeta li.threatDate, ul.threatMeta li.incidentDate, ul.incidentMeta li.threatDate, ul.incidentMeta li.incidentDate {
+    color: #999;
+    font-size: 13px; }
+  ul.threatMeta span.trackedThreat, ul.incidentMeta span.trackedThreat {
+    font-weight: bold; }
+
+ul.threatAction li, ul.incidentAction li {
+  float: left; }
+ul.threatAction li.threatCount, ul.incidentAction li.threatCount {
+  border-right: 1px solid #dfdfdf;
+  border-left: 1px solid #dfdfdf;
+  text-align: center; }
+ul.threatAction li.threatTracker, ul.threatAction li.incidentTracker, ul.incidentAction li.threatTracker, ul.incidentAction li.incidentTracker {
+  padding: 20px; }
+ul.threatAction .trackerButton, ul.incidentAction .trackerButton {
+  width: 81px; }
+
+div.threatRollupWrapper {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dfdfdf; }
+
+ul.threatRollup li {
+  background-color: #FFF;
+  padding: 5px;
+  border: 1px solid #dfdfdf;
+  width: 25%; }
+ul.threatRollup .threatAddress {
+  text-align: right;
+  float: right; }
+ul.threatRollup .threatNumeral {
+  float: left; }
+
+div.threatSuppressor button {
+  margin: 20px 20px 0 0; }
+
+ul.threatCount {
+  width: 100px; }
+  ul.threatCount div {
+    text-align: center; }
+  ul.threatCount div.threatCountNumeral {
+    padding: 20px 20px 0;
+    color: #999;
+    font-size: 28px; }
+  ul.threatCount div.threatCountLabel {
+    padding: 10px 20px 0;
+    color: #999;
+    font-size: 13px;
+    text-transform: uppercase; }
+
+ul.threatsFilter {
+  padding-top: 10px; }
+  ul.threatsFilter li {
+    margin-right: 8px;
+    float: left; }
+
+table.threatTable {
+  width: 40%; }
+  table.threatTable th:nth-child(2), table.threatTable td:nth-child(2) {
+    text-align: right; }
+
+label span {
+  color: #999;
+  font-size: 12px; }
+
+div.threatForm {
+  width: 460px; }
+
+ul.threatList {
+  margin: 0 0 10px 5px; }
+  ul.threatList li {
+    background-color: #FFF;
+    margin: 0 5px 5px 0;
+    border: 1px solid #dfdfdf;
+    width: 48%;
+    float: left; }
+  ul.threatList span {
+    margin: 10px 5px; }
+  ul.threatList input {
+    margin: 10px 5px; }
+
+.lastThreat {
+  border-bottom: 1px solid #dfdfdf; }
+
+#secondary-nav {
+  margin-top: 10px; }
+
+.userdrop {
+  margin: 5px 0 0 10px; }
+
+footer {
+  padding: 20px;
+  color: #ababab;
+  font-size: 13px;
+  text-transform: uppercase; }
+  footer a {
+    color: #ababab; }
+  footer a:hover {
+    color: #fff; }
+
+ul.footerMenu li {
+  margin-left: 12px;
+  float: left; }
+
+div.formActions {
+  text-align: right; }
+  div.formActions a {
+    margin-left: 5px; }
+
+#pageHeader {
+  padding-top: 10px; }
+
+#navWrapper {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cfcfcf;
+  width: 940px; }
+
+.shadow {
+  -moz-box-shadow: 0px 1px 2px #dddddd;
+  -webkit-box-shadow: 0px 1px 2px #dddddd;
+  box-shadow: 0px 1px 2px #dddddd;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color'); }
